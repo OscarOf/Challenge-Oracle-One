@@ -13,6 +13,7 @@ La letra "u" es convertida para "ufat"*/
 //console.log(a.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u"));
 
 var textEncrip = document.getElementById("textoE");
+var textDescrip = document.getElementById("textoD");
 var botonEncrip = document.getElementById("botonE");
 
 function encriptar() {        
