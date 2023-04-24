@@ -15,6 +15,7 @@ La letra "u" es convertida para "ufat"*/
 var textEncrip = document.getElementById("textoE");
 var textDescrip = document.getElementById("textoD");
 var botonEncrip = document.getElementById("botonE");
+var botonDesncrip = document.getElementById("botonD");
 
 function encriptar() {        
     //console.log(textEncrip.value);
@@ -26,4 +27,14 @@ function encriptar() {
     }
 }
 
+function desencriptar(){
+    if(textDescrip == ""){
+        document.write("escribe algo");
+    }else{
+        let res = textDescrip.value.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
+        document.write(res);
+    }
+}
+
 botonEncrip.onclick = encriptar;
+botonDesncrip.onclick = desencriptar;
