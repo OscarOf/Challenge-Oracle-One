@@ -17,7 +17,7 @@ var textDescrip = document.getElementById("textoD");
 var botonEncrip = document.getElementById("botonE");
 var botonDesncrip = document.getElementById("botonD");
 
-function encriptar() {        
+function encriptar(){        
     //console.log(textEncrip.value);
     if(textEncrip.value == ""){
         document.write("escribe algo");
