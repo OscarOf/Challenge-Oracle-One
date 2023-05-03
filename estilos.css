@@ -1,0 +1,12 @@
+*{
+    background: #F3F5FC;
+}
+
+main{
+    display: flex;
+}
+
+.tEncriptado{
+    border: none;
+    text-transform: lowercase;
+}
