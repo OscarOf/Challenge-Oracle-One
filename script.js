@@ -10,29 +10,28 @@ La letra "u" es convertida para "ufat"*/
 
 //let a = "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!";        
 
-//console.log(a.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u"));
-
 var textEncrip = document.getElementById("textoE");
 var textDescrip = document.getElementById("textoD");
 var botonEncrip = document.getElementById("botonE");
 var botonDesncrip = document.getElementById("botonD");
 
-function encriptar(){        
-    //console.log(textEncrip.value);
+function encriptar(){            
     if(textEncrip.value == ""){
         document.write("escribe algo");
     }else{
+        textEncrip.value = textEncrip.value.toLowerCase();
         let res = textEncrip.value.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
-        document.write(res);
+        textDescrip.value = res;
     }
 }
 
 function desencriptar(){
-    if(textDescrip == ""){
+    if(textDescrip.value == ""){
         document.write("escribe algo");
     }else{
+        textDescrip.value = textDescrip.value.toLowerCase();
         let res = textDescrip.value.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
-        document.write(res);
+        textEncrip.value = res;
     }
 }
 
